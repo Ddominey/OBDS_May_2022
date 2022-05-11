@@ -1,0 +1,53 @@
+
+[ddominey@cbrglogin3 OBDS_May_2022]$ myobds
+[ddominey@cbrglogin3 ddominey]$ ls
+1_linux  git  projects
+[ddominey@cbrglogin3 ddominey]$ cd projects
+[ddominey@cbrglogin3 projects]$ ls
+10_05_2022_Afternoon_session  2_baseR
+[ddominey@cbrglogin3 projects]$ cd 2_baseR/
+[ddominey@cbrglogin3 2_baseR]$ ls
+10_05_2022_Afternoon_Session    10_05_2022_Morning_session.R  Example_R-script_exercise_1.R
+10_05_2022_Afternoon_Session.R  2_baseR.Rproj                 subset_coding_gene_region_base_R.txt
+[ddominey@cbrglogin3 2_baseR]$ cp 10_05_2022_Afternoon_Session.R /project/obds/ddominey/git/OBDS_May_2022/
+[ddominey@cbrglogin3 2_baseR]$ cp 10_05_2022_Morning_session.R /project/obds/ddominey/git/OBDS_May_2022/
+[ddominey@cbrglogin3 2_baseR]$ myobds
+[ddominey@cbrglogin3 ddominey]$ ls
+1_linux  git  projects
+[ddominey@cbrglogin3 ddominey]$ cd git
+[ddominey@cbrglogin3 git]$ ls
+OBDS_May_2022
+[ddominey@cbrglogin3 git]$ cd OBDS_May_2022/
+[ddominey@cbrglogin3 OBDS_May_2022]$ ls
+10_05_2022_Afternoon_Session.R  10_05_2022_Morning_session.R  2_baseR.Rproj  README.md
+[ddominey@cbrglogin3 OBDS_May_2022]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	10_05_2022_Afternoon_Session.R
+	10_05_2022_Morning_session.R
+
+nothing added to commit but untracked files present (use "git add" to track)
+[ddominey@cbrglogin3 OBDS_May_2022]$ git add 10
+10_05_2022_Afternoon_Session.R  10_05_2022_Morning_session.R    
+[ddominey@cbrglogin3 OBDS_May_2022]$ git add 10_05_2022_
+10_05_2022_Afternoon_Session.R  10_05_2022_Morning_session.R    
+[ddominey@cbrglogin3 OBDS_May_2022]$ git add 10_05_2022_Afternoon_Session.R
+[ddominey@cbrglogin3 OBDS_May_2022]$ git add 10_05_2022_Morning_session.R
+[ddominey@cbrglogin3 OBDS_May_2022]$ git commit
+[main 2e0be01] Adding Morning / Afternoon Scripts
+ 2 files changed, 96 insertions(+)
+ create mode 100644 10_05_2022_Afternoon_Session.R
+ create mode 100644 10_05_2022_Morning_session.R
+[ddominey@cbrglogin3 OBDS_May_2022]$ git push
+Enter passphrase for key '/home/d/ddominey/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 40 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.99 KiB | 203.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Ddominey/OBDS_May_2022.git
+   d724dc7..2e0be01  main -> main
