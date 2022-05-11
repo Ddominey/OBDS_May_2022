@@ -93,31 +93,6 @@ repeat_fun <- function(x){
 sapply(my_list, rep, each =3)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Exercise 7 Loops
 for(i in 1:7) {
   print(i^3)
@@ -138,4 +113,16 @@ for (colour in colour_vector){
   }
 }
 
+#using ifelse
 ifelse(nchar(colour_vector)==4, print(colour_vector), NA)
+
+#Exercise 8 Functions - calculating the hypotenuse of a triangle
+hypo_function <- function(x=1, y=1){
+  sqrt((x^2)+ (y^2))
+}
+
+hypo_function(3,4) ; hypo_function(7,9)
+
+hypo_function(x,y)
+
+
